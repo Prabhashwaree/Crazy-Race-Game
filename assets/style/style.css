@@ -4,6 +4,7 @@
      height: 100vh;
      width: 100vw;
      position: fixed;
+     z-index: 100;
 }
 
 body{
@@ -51,16 +52,87 @@ body{
      /* position: fixed; */
 }
 
-#option>img{
+#option>img:nth-child(2){
     filter: blur(3px);
 }
 
-/* #player_save_details{
-    top: 20%;
+#player_save_details{
+    top: 0%;
+    bottom: 0;
+    left: 0;
+    right: 0;
     width: 50vw;
-    height: 10vh;
+    height: 50vh;
     position: absolute;
     margin: auto;
-    background-color: white;
-    border: 1px solid red;
-}  */
+    background-color: transparent;
+    /* border: 1px solid red; */
+    box-shadow: rgba(82, 82, 82, 0.56) 0px 22px 70px 4px;
+    z-index: 1;
+} 
+
+#option>img:nth-child(1){
+    z-index: 2;
+    top: -20%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    position: absolute;
+    z-index: 5;
+}
+#form{
+    z-index: 2;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    position: absolute;
+    
+}
+
+#pasword{
+    top: 61%;
+    bottom: 0;
+    left: 40%;
+    right: 0;
+    margin: auto;
+    position: absolute;
+}
+#userName{
+    top: 55%;
+    bottom: 0;
+    left: 40%;
+    right: 0;
+    margin: auto;
+    position: absolute; 
+}
+
+#btnLogin{
+    top: 20%;
+    bottom: 0;
+    left: 35%;
+    right: 0;
+    width: 100%;
+    margin: auto;
+    position: absolute; 
+    
+}
+
+#loginImg{
+    top: 20%;
+    bottom: 0;
+    left: 35%;
+    right: 0;
+    margin: auto;
+    position: absolute;
+}
+
+/* #loginImg:hover{
+    width: 8%;
+    height: 8%;
+    position: absolute;
+} */
+
+

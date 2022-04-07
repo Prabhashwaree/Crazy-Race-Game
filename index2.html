@@ -20,26 +20,150 @@
         position: absolute;
         /* z-index: 1; */
         background-color: transparent;
-        box-shadow: rgba(194, 32, 32, 0.56) 0px 22px 70px 4px;
+        box-shadow: rgba(102, 98, 98, 0.56) 0px 22px 70px 4px;
       }
 
       #bottomBar{
         bottom: 0;
         width: 99vw;
-        height: 8vh;
+        height: 10vh;
         position: absolute;
         /* z-index: 1; */
         background-color: transparent;
-        box-shadow: rgba(194, 32, 32, 0.56) 0px 22px 70px 4px; 
+        box-shadow: rgba(102, 98, 98, 0.56) 0px 22px 70px 4px;
       }
 
-      #topBar>div{
+      #topBar>div:nth-child(1){
         width: 18vw;
         height: 6vh;
         left: 2%;
         position: relative;
         top: 6px;
         background-color: rgb(255, 255, 255);
+      }
+
+      #seting{
+        right: 20px;
+        position: absolute;
+        top: 3px;
+      }
+      #seting:hover{
+        right: 19px;
+        position: absolute;
+        top: 2px;
+        width: 6vw;
+        height: 8vh;
+      }
+
+      #coins{
+        width: 15%;
+        height: 6vh;
+        right: 100px;
+        top: 7px;
+        background-color: transparent;
+        border-radius: 10%;
+        position: absolute;
+        box-shadow: rgba(129, 126, 126, 0.56) 0px 22px 70px 4px;
+      }
+      #coins>img{
+        right: 150px;
+        position: absolute;
+        top: 7px;
+        border-radius: 100%;
+        width: 2vw;
+        height: 4vh;
+      }
+
+      #coins>h3{
+        right: 78px;
+        position: absolute;
+        top: -11px;
+        border-radius: 100%;
+        color: white;
+       
+      }
+
+      #nos{
+        width: 10%;
+        height: 6vh;
+        right: 310px;
+        top: 7px;
+        background-color: transparent;
+        border-radius: 10%;
+        position: absolute;
+        box-shadow: rgba(129, 126, 126, 0.56) 0px 22px 70px 4px;
+      }
+
+      #nos>img{
+        right: 88px;
+        position: absolute;
+        top: 7px;
+        border-radius: 100%;
+        width: 2vw;
+        height: 4vh;
+      }
+
+      #nos>h3{
+        right: 60px;
+        position: absolute;
+        top: -11px;
+        border-radius: 100%;
+        color: white;
+       
+      }
+
+
+      /* sideOption */
+
+      #sideOption>div:nth-child(1){
+        width: 5%;
+        height: 11vh;
+        left: 2%;
+        top: 20%;
+        background-color: rgb(0, 0, 0);
+        border-radius: 10%;
+        position: absolute;
+        box-shadow: rgba(212, 182, 7, 0.56) 0px 22px 70px 4px;
+      }
+
+      #sideOption>div:nth-child(1)>img{
+        width: 3vw;
+        height: 3vw;
+        border-radius: 100%;
+        left: 18%;
+        top: 14%;
+        position: absolute;
+      }
+      #sideOption>div:nth-child(1)>img:hover{
+        width: 4vw;
+        height: 4vw;
+        position: absolute;
+      }
+
+
+      #sideOption>div:nth-child(2){
+        width: 5%;
+        height: 11vh;
+        left: 2%;
+        top: 35%;
+        background-color: rgb(0, 0, 0);
+        border-radius: 10%;
+        position: absolute;
+        box-shadow: rgba(38, 7, 212, 0.56) 0px 22px 70px 4px;
+      }
+
+      #sideOption>div:nth-child(2)>img{
+        width: 3vw;
+        height: 3vw;
+        border-radius: 100%;
+        left: 18%;
+        top: 19%;
+        position: absolute;
+      }
+      #sideOption>div:nth-child(2)>img:hover{
+        width: 4vw;
+        height: 4vw;
+        position: absolute;
       }
     </style>
     
@@ -54,9 +178,37 @@
         <section id="topBar">
             <div><img src="assets/image/270-2701362_live-wallpaper-car.jpg" alt="" style="width: 5vw; height: 5vh;top: 3px;left: 3px; position: absolute;"></div>
             <h3 style="left: 135px;position: absolute;top: -5px;">SM-M022G</h3>
-        </section>
+
+            <img src="assets/image/28511_settings_718x718.png" alt="" id="seting" style="width: 5vw; height: 7vh;">
+        
+            <div id="coins">
+              <img src="assets/image/american-money-presidential-one-dollar-gold-coin-with-statue-liberty-reverse_218319-7508.webp" alt="">
+              <h3>16,000</h3>
+            </div>
+
+            <div id="nos">
+              <img src="assets/image/nitrous-oxide-system-gas-cylinder-isolated-on-white-background-EN1YRJ.jpg" alt="">
+              <h3>5</h3>
+            </div>
+          </section>
+
+
+          <section id="sideOption">
+            <div>
+              <img src="assets/image/download (1).png" alt="">
+            </div>
+
+            <div>
+              <img src="assets/image/nitrous-oxide-system-gas-cylinder-isolated-on-white-background-EN1YRJ.jpg" alt="">
+            </div>
+            <div></div>
+            <div>
+              <!-- <img src="assets/image/ThirdGrossHairstreakbutterfly-max-1mb.gif" alt=""> -->
+            </div>
+          </section>
 
         <section id="bottomBar">
+
 
         </section>
     </section>
